@@ -1,12 +1,10 @@
 package domain;
 
-public abstract class Conteudo {
+public abstract class Conteudo implements Iconteudo{
     protected static final double XP_Padrao = 10d;
 
     private String titulo;
     private String descricao;
-
-    public abstract double calcularXP();
 
     public String getTitulo() {
         return titulo;
